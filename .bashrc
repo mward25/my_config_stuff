@@ -53,8 +53,6 @@ alias cls=clear
 alias mvytdl="./mv_old && youtube-dl  --external-downloader aria2c --external-downloader-args -x16 --external-downloader-args -s16"
 #alias mvytdl="./mv_old && youtube-dl "
 
-# run fortune and display with cowsay
-fortune | cowsay -ftux
 
 
 # --external-downloader COMMAND        Use the specified external downloader.                                                                                                                                  Currently supports aria2c,avconv,axel,c                                                                                                                                 url,ffmpeg,httpie,wget                                                                                                             --external-downloader-args ARGS      Give these arguments to the external
