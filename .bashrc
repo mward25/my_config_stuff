@@ -34,6 +34,8 @@ export DISPLAY=:0.0
 
 export GH_EDITOR=vim
 
+alias vi=vim
+
 # Makes my stupid ls typos still work
 alias sl="ls"
 alias lls="ls"

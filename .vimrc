@@ -40,6 +40,7 @@ Plugin 'octol/vim-cpp-enhanced-highlight'
 
 " Other Plugins
 Plugin 'Yggdroot/indentLine' 
+Plug 'crusoexia/vim-monokai'
 
 
 " All of your Plugins must be added before the following line
@@ -62,10 +63,6 @@ filetype plugin indent on    " required
 	" Put your non-Plugin stuff after this line
 
 
-call plug#begin()
-	Plug 'crusoexia/vim-monokai'
-call plug#end()
-
 set backupdir=~/vim_backup
 set directory=~/vim_backup
 
@@ -75,7 +72,7 @@ set autoindent
 set smartindent
 set noexpandtab
 set number
-set mouse=a
+#set mouse=a
 set spell spelllang=en_us
 
 " start NERDtree
