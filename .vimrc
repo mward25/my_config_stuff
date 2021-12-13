@@ -40,7 +40,7 @@ Plugin 'octol/vim-cpp-enhanced-highlight'
 
 " Other Plugins
 Plugin 'Yggdroot/indentLine' 
-Plug 'crusoexia/vim-monokai'
+Plugin 'crusoexia/vim-monokai'
 
 
 " All of your Plugins must be added before the following line
@@ -72,7 +72,7 @@ set autoindent
 set smartindent
 set noexpandtab
 set number
-#set mouse=a
+" set mouse=a
 set spell spelllang=en_us
 
 " start NERDtree

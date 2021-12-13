@@ -27,3 +27,4 @@ if [ -x /usr/bin/fortune ] ; then
      fortune | cowsay -ftux
     echo
 fi
+. ~/.bashrc

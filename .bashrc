@@ -24,12 +24,14 @@ export EDITOR=/usr/bin/vim
 #
 #export PILOTPORT=/dev/pilot
 #export PILOTRATE=115200
-export PATH=$PATH:~.gem/ruby/2.5.0/bin/:~.local/bin
+#export PATH=$PATH:~.gem/ruby/2.5.0/bin/:~.local/bin
 export TESSDATA_PREFIX=/opt/tessdata_custom/tessdata_best
 test -s ~/.alias && . ~/.alias || true
 
 # make x over ssh work
 export DISPLAY=:0.0
+#export DISPLAY=`grep nameserver /etc/resolv.conf | sed 's/nameserver //'`
+
 #enablex.sh
 
 export GH_EDITOR=vim
@@ -47,18 +49,23 @@ alias lssl=ls
 # make git take less work
 alias git_push_or="git push origin"
 alias gitAAC="git add . && git commit"
+. /usr/share/bash-completion/completions/git
 
 # Makes cls clear the screen
 alias cls=clear
 
+# make opengl work better
+export LIBGL_ALWAYS_INDIRECT=0
+
 # This makes my life easier by giving me a shortcut so I have to type less
-alias mvytdl="./mv_old && youtube-dl  --external-downloader aria2c --external-downloader-args -x16 --external-downloader-args -s16"
+#alias mvytdl="./mv_old && youtube-dl  --external-downloader aria2c --external-downloader-args -x16 --external-downloader-args -s16"
 #alias mvytdl="./mv_old && youtube-dl "
 
 
 
 # --external-downloader COMMAND        Use the specified external downloader.                                                                                                                                  Currently supports aria2c,avconv,axel,c                                                                                                                                 url,ffmpeg,httpie,wget                                                                                                             --external-downloader-args ARGS      Give these arguments to the external
 
+# export DISPLAY=localhost:0.0
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
 __conda_setup="$('/home/miles/miniconda3/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
