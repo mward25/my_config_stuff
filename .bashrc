@@ -38,6 +38,8 @@ export GH_EDITOR=vim
 
 alias vi=vim
 
+alias ls="ls --color=auto"
+
 # Makes my stupid ls typos still work
 alias sl="ls"
 alias lls="ls"
@@ -45,6 +47,16 @@ alias sls=ls
 alias slsl=ls
 alias lss=ls
 alias lssl=ls
+
+# if the ARC vairiable is not set, set it to x86_64
+if [ -z "$ARC" ]
+then
+    export ARC="x86_64"
+    if [ -z "$arc"]
+    then
+        export arc=$ARC
+    fi
+fi
 
 # make git take less work
 alias git_push_or="git push origin"
