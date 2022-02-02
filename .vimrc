@@ -40,13 +40,16 @@ Plugin 'octol/vim-cpp-enhanced-highlight'
 
 " Other Plugins
 Plugin 'crusoexia/vim-monokai'
-Plugin 'vim-scripts/Conque-GDB'
+"Plugin 'vim-scripts/Conque-GDB'
 " Plugin 'luochen1990/indent-detector.vim' " this plugin is also bothersome
 " Plugin 'ycm-core/YouCompleteMe' " This pluging is kind of annoying
 "
 "
 " For refactoring
 Plugin 'prabirshrestha/vim-lsp'
+
+" a simple file tree plugin
+Plugin 'preservim/nerdtree'
 
 
 " All of your Plugins must be added before the following line
