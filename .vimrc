@@ -117,6 +117,12 @@ augroup END
 set backupdir=~/vim_backup
 set directory=~/vim_backup
 
+" configuration for boxes
+vmap ,mc !echo -e "\/*\n" "`boxes  -d unicornthink`" "\n*/"<CR>
+nmap ,mc !!echo -e "/*\n" "`boxes  -d unicornthink`" "\n*/"<CR>
+vmap ,xc !boxes  -d unicornthink -r<CR>
+nmap ,xc !!boxes -d unicornthink -r<CR>
+
 syntax on
 set backspace=2
 set autoindent

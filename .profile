@@ -23,8 +23,10 @@ test -z "$PROFILEREAD" && . /etc/profile || true
 
 if [ -x /usr/bin/fortune ] ; then
     echo
-     # run fortune and display with cowsay
-     fortune | cowsay -ftux
+     # run fortune and display with boxes and lolcat
+     #fortune | cowsay -ftux
+     #figlet "`fortune`" | boxes -d spring | lolcat -a -s 100
+     figlet -w 100 "`fortune`" | boxes -d spring | boxes -d unicornthink | boxes -d parchment | lolcat -a -s 50
     echo
 fi
 . ~/.bashrc
