@@ -41,6 +41,9 @@ alias vi=vim
 alias ls="ls --color=auto"
 
 # Makes my stupid ls typos still work
+alias l="ls -al"
+alias la="ls -al"
+alias ll="ls -l"
 alias sl="ls"
 alias lls="ls"
 alias sls=ls
@@ -68,6 +71,8 @@ alias cls=clear
 
 # make opengl work better
 export LIBGL_ALWAYS_INDIRECT=0
+
+export FBFONT=/usr/share/kbd/consolefonts/ter-216n.psf.gz
 
 # This makes my life easier by giving me a shortcut so I have to type less
 #alias mvytdl="./mv_old && youtube-dl  --external-downloader aria2c --external-downloader-args -x16 --external-downloader-args -s16"
