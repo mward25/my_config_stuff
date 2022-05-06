@@ -38,7 +38,11 @@ export GH_EDITOR=vim
 
 alias vi=vim
 
+# make commands colorful
 alias ls="ls --color=auto"
+alias less="less -r"
+alias grep="grep --color=always"
+alias pdfgrep="pdfgrep --color=always"
 
 # Makes my stupid ls typos still work
 alias l="ls -al"
@@ -50,6 +54,8 @@ alias sls=ls
 alias slsl=ls
 alias lss=ls
 alias lssl=ls
+
+
 
 # if the ARC vairiable is not set, set it to x86_64
 if [ -z "$ARC" ]
