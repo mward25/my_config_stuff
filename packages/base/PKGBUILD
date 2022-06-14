@@ -1,0 +1,48 @@
+# This is an example PKGBUILD file. Use this as a start to creating your own,
+# and remove these comments. For more information, see 'man PKGBUILD'.
+# NOTE: Please fill out the license field for your package! If it is unknown,
+# then please put 'unknown'.
+
+# Maintainer: Your Name <youremail@domain.com>
+pkgname=milesPackagesThatAreCool-meta
+pkgver=0.0.2
+pkgrel=0
+epoch=
+pkgdesc="Some packages that I like to have on my arch computer"
+arch=(any)
+url=""
+license=('unknown')
+groups=()
+depends=(nethack tmux links)
+makedepends=()
+checkdepends=()
+optdepends=(dhcpcd iwd grub btrfs-progs dosfstools)
+provides=()
+conflicts=()
+replaces=()
+backup=()
+options=()
+install=
+changelog=
+source=()
+noextract=()
+md5sums=()
+validpgpkeys=()
+
+prepare() {
+	true
+}
+
+build() {
+	true
+}
+
+check() {
+	true
+}
+
+package() {
+	#echo "remember to install something to manage the network:"
+	#echo "	Recomended: iwd, and dhcpcd"
+	true
+}
