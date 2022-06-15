@@ -103,6 +103,9 @@ augroup END
 set backupdir=~/vim_backup
 set directory=~/vim_backup
 
+" make Gdiff be vertical
+set diffopt+=vertical
+
 " configuration for boxes
 vmap ,mc !echo -e "\/*\n" "`boxes  -d unicornthink`" "\n*/"<CR>
 nmap ,mc !!echo -e "/*\n" "`boxes  -d unicornthink`" "\n*/"<CR>

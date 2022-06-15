@@ -40,7 +40,7 @@ alias vi=vim
 
 # make commands colorful
 alias ls="ls --color=auto"
-alias less="less -r"
+alias less="less -R"
 alias grep="grep --color=always"
 alias pdfgrep="pdfgrep --color=always"
 
@@ -54,6 +54,10 @@ alias sls=ls
 alias slsl=ls
 alias lss=ls
 alias lssl=ls
+
+# git easy things.
+alias git_pull="git submodule sync && git submodule update --init --recursive --remote && git pull"
+# pull --recurse-submodule"
 
 
 
@@ -79,6 +83,19 @@ alias cls=clear
 export LIBGL_ALWAYS_INDIRECT=0
 
 export FBFONT=/usr/share/kbd/consolefonts/ter-216n.psf.gz
+
+export MANPATH=$MANPATH:/home/miles/projects/minDND/MinDND-Docs/man
+
+
+# according to https://www.tecmint.com/view-colored-man-pages-in-linux/, this will make my manpages look prettyier.
+export LESS_TERMCAP_mb=$'\e[1;32m'
+export LESS_TERMCAP_md=$'\e[1;32m'
+export LESS_TERMCAP_me=$'\e[0m'
+export LESS_TERMCAP_se=$'\e[0m'
+export LESS_TERMCAP_so=$'\e[01;33m'
+export LESS_TERMCAP_ue=$'\e[0m'
+export LESS_TERMCAP_us=$'\e[1;4;31m'
+
 
 # This makes my life easier by giving me a shortcut so I have to type less
 #alias mvytdl="./mv_old && youtube-dl  --external-downloader aria2c --external-downloader-args -x16 --external-downloader-args -s16"
