@@ -35,7 +35,9 @@ Plugin 'crusoexia/vim-monokai'
 Plugin 'prabirshrestha/vim-lsp'
 
 " a simple file tree plugin
-Plugin 'preservim/nerdtree'
+" Found that the default file system plugin is superior after you get used to
+" it..
+"Plugin 'preservim/nerdtree'
 
 
 " All of your Plugins must be added before the following line
@@ -102,9 +104,6 @@ augroup END
 
 set backupdir=~/vim_backup
 set directory=~/vim_backup
-
-" make Gdiff be vertical
-set diffopt+=vertical
 
 " configuration for boxes
 vmap ,mc !echo -e "\/*\n" "`boxes  -d unicornthink`" "\n*/"<CR>
