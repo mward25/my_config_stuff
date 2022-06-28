@@ -5,7 +5,7 @@
 
 # Maintainer: Your Name <youremail@domain.com>
 pkgname=milesPackagesThatAreCool-meta
-pkgver=0.0.2
+pkgver=0.0.3
 pkgrel=0
 epoch=
 pkgdesc="Some packages that I like to have on my arch computer"
@@ -13,7 +13,7 @@ arch=(any)
 url=""
 license=('unknown')
 groups=()
-depends=(nethack tmux links)
+depends=(nethack tmux links git github-cli)
 makedepends=()
 checkdepends=()
 optdepends=(dhcpcd iwd grub btrfs-progs dosfstools)
